@@ -1,8 +1,9 @@
 ---
-- name: intial update of the ubuntu server
+- name: update package
   apt:
     update_cache: yes
-- name: installing the java package
+- name: i want to install java
   apt:
-    name: default-jdk
-    state: present
+   name: default-jdk
+   state: present
+ 
