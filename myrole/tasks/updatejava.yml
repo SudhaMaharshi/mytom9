@@ -2,6 +2,7 @@
 - name: update package
   apt:
     update_cache: yes
+  sudo: True
 
 - name: i want to install java
   apt:
