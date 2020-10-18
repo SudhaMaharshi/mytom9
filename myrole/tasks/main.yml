@@ -1,2 +1,11 @@
 ---
 # tasks file for myrole
+- include: updatejava.yml
+- include: createtomuser.yml
+- include: downloadtomcat.yml
+- include: extract.yml
+- include: updatepermissions.yml
+- include: mytomconf.yml
+- include: mytomuserwebmanage.yml
+- include: mysetupformngrandhost.yml
+- include: maharshi.yml

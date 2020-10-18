@@ -1,0 +1,55 @@
+---
+- name: change group permissions 
+  file:
+    path: /opt/tomcat
+    state: directory
+    recurse: yes
+    group: tomcat
+
+- name: chage ownership of groups
+  file:
+    path: /opt/tomcat/conf
+    state: directory
+    mode: g+r
+    recurse: yes
+    group: tomcat
+
+
+- name: change execitong permissions
+  file: 
+    path: /opt/tomcat/conf
+    state: directory
+    mode: g+x
+    recurse: yes
+    group: tomcat
+
+
+- name: updateing permissions for webapps
+  file:
+    path: /opt/tomcat/webapps
+    state: directory
+    recurse: yes
+    owner: tomcat
+
+- name: updateing permissions for work
+  file:
+    path: /opt/tomcat/work
+    state: directory
+    recurse: yes
+    owner: tomcat
+
+- name: updateing permissions for temp
+  file:
+    path: /opt/tomcat/temp
+    state: directory
+    recurse: yes
+    owner: tomcat
+
+- name: updateing permissions for logs
+  file:
+    path: /opt/tomcat/logs
+    state: directory
+    recurse: yes
+    owner: tomcat
+
+
