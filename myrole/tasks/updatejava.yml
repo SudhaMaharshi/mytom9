@@ -2,6 +2,7 @@
 - name: update package
   apt:
     update_cache: yes
+    become: yes
 - name: i want to install java
   apt:
    name: default-jdk
