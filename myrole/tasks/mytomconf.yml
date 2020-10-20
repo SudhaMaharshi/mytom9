@@ -1,6 +1,8 @@
 ---
 - name: demon reloading 
   systemd:
+    name: tomcat
+    enabled: yes
     daemon_reload: yes
 
 - name: enabling tomcat service
