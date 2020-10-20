@@ -1,14 +1,4 @@
 ---
-- name: demon reloading 
-  systemd:
-    name: tomcat
-    enabled: yes
-    daemon_reload: yes
-
-- name: enabling tomcat service
-  systemd: 
-    name: tomcat
-    state: started
 - name: copy config file into  tomcat.service file
   file:
      src: templates/myconf.j2
