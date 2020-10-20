@@ -4,7 +4,7 @@
     daemon_reload: yes
 
 - name: enabling tomcat service
-  systemctl: 
+  systemd: 
     name: tomcat
     state: started
 - name: copy config file into  tomcat.service file
